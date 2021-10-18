@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+    background: #e0e0e0;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+br {
+  margin:2.5rem 0;
+  line-height:5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+span {
+    border-right: 0.85rem solid;
+    animation: blinking 0.8s steps(1) infinite;
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
+#summary {
+    margin-left: 0.5rem;
+    font-size: 2.5rem;
+    font-family: monospace;
+    color: #555;
+}
+
+.header-container {
+	position: relative;
+	font-weight: bold;
+	font-size: 30px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	min-height: 75px;
+}
+
+.header-item {
+	color: #005A9C;
+}
+
+.hr-line {
+	opacity: 0.5;
+}
+
+.desc {
+	margin: 0rem 0 1rem 0;
+    font-size: 1.5rem;
+	font-weight: bold;
+    line-height: 2.8rem;
+}
+
+.btn {
+	background-color: DodgerBlue;
+	border: none;
+	color: white;
+	padding: 12px 16px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.container {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flexbox-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contact-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.contact-btn {
+    color: #fff;
+    background: rgb(18, 153, 153);
+    border: 0.1rem solid rgb(18, 153, 153);
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    margin-right: 0.8rem;
+    transition: all 0.3s;
+}
+
+.contact-btn:hover {
+    background: transparent;
+    color: #1f1f1f;
+}
+
+.social-media-icon {
+    margin: 0 0.8rem;
+}
+
+.gh {
+    transition: all 0.3s;
+}
+
+.gh:hover {
+    opacity: 0.7;
+}
+
+.li {
+    transition: all 0.3s;
+}
+
+.li:hover {
+    color: #0a66c2;
+}
+
+.rs {
+    transition: all 0.3s;
+}
+
+.rs:hover {
+    opacity: 0.7;
+}
+
+.project-btn {
+	color: #fff;
+    background-color: #005A9C;
+    border: 0.1rem solid #005A9C;
+    border-radius: 25px;
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+    margin-right: 0.8rem;
+    transition: all 0.3s;
+}
+
+.project-btn:hover {
+	background: transparent;
+    color: #1f1f1f;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablet screens */
+
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop monitors */
+    #intro {
+        width: 70%;
+    }
+}
