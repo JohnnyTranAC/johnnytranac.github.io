@@ -164,6 +164,10 @@ span {
     color: #1f1f1f;
 }
 
+.filter-lblue{
+	filter: invert(80%) sepia(72%) saturate(2175%) hue-rotate(159deg) brightness(92%) contrast(85%);
+}
+
 @media only screen and (min-width: 600px) {
     /* For tablet screens */
 
