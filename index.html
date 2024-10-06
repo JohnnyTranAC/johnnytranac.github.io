@@ -1,104 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="index.css"/>
-
-	<title>Johnny Tran's Portfolio</title>
-</head>
-<body>
-	<header class="header-container" id="top">
-		<p class="header-item" >johnnytranac.github.io</p>
-			<a href="mailto:johnnytranac@gmail.com" title="Email Johnny Tran" class="contact-btn">Contact Me</a>
-			<a href="https://github.com/JohnnyTranAC" title="Visit Johnny Tran on GitHub" class="gh" target="_blank">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="shortcut icon" href="assets/images/favicon.ico">
+		
+		<title>Johnny Tran's Portfolio</title>
+	</head>
+	<body>
+		<div class="header">
+			<div id="title">johnnytranac.github.io</div>
+			<a href="mailto:johnnytranac@gmail.com" title="Email Johnny Tran" class="btn-contact">Contact Me</a>
+			<a href="https://github.com/JohnnyTranAC" title="Visit Johnny Tran on GitHub" class="btn-github" target="_blank">
 				<i class="fa fa-github fa-2x social-media-icon"></i>
+				Github
 			</a>
-			<a href="https://www.linkedin.com/in/jjtv-tran" title="Visit Johnny Tran on LinkedIn" class="li" target="_blank">
-				<i class="fa fa-linkedin fa-2x social-media-icon"></i>
+			<a href="https://www.linkedin.com/in/jjtv-tran" title="Visit Johnny Tran on LinkedIn" class="btn-linkedin" target="_blank">
+				<img src="assets/images/linkedin.svg" height="40" height=auto/>
 			</a>
-			<a href="resume.pdf" title="Visit Johnny Tran's Resume" class="rs" target="_blank">
-				<img src="assets/images/resume.svg" width="50" height=auto/>
+			<a href="resume.pdf" title="Visit Johnny Tran's Resume" class="btn-resume" target="_blank">
+				<img src="assets/images/resume.svg" height="50" height=auto/>
+				Resume
 			</a>
-	</header>
-	<hr class="hr-line">
-	<br>
-	<div class="container">
-		<h1>Hello, I'm Johnny Tran</h1>
-		<br>
-		<h2>
-			<p style="color:#D1B000;">University of California, Irvine Graduate 2021
-			<p style="color:#D1B000;">Bachelor of Science, BS ● Computer Engineering
-		</h2>
-		<br>
-		<p id="summary">Aspiring Software Engineer Looking to Improve Himself</p>
-		<br>
-		<hr class="hr-line">
-		<br>
-		<h2> Please visit my projects below. Enjoy your stay</p>
-		<br>
-		<p>
-			<div id="qr" style="display: inline-block; min-width:5cm; height:10cm; align: center; vertical-align: middle;">
-				<img src="assets/images/preview-tetris.png" style="width: 5cm;">
+			<div class="progress-bar"></div>
+		</div>
+		<div class="content">
+			<div class="opener">
+				<span style="font-size: 27px; font-weight: bold;">
+					Hello, I'm Johnny Tran
+				</span>
+				<div style="margin: 10px 0 10px 25px; font-weight: bold; color: #D1B000;">
+					University of California, Irvine Graduate 2021
+					<br>
+					Bachelor of Science, BS ● Computer Engineering
+				</div>
+				<span style="margin-left: 25px; font-size: 25px; font-family: monospace; color: #555;">
+					A Software Developer Continuing to Improve Himself
+				</span>
 			</div>
-			<div style="display: inline-block; vertical-align: middle;">
-				<a href="https://github.com/JohnnyTranAC/Tetris-Android-App" class="gh" target="_blank">
-					<button class="btn project-btn">
-						<img src="assets/images/tetris.svg" width="25" height=auto/> | Tetris - Android App
-					</button>
-				</a>
-				<br>
-				<p class="desc"><br> A Java clone of the Tetris game for Android phone applications
+			<hr>
+			<div class="projects-SF">
+				<div class="projects-title">Salesforce</div>
+				<div class="projects-grid-container">
+					<div class="projects-grid-item">
+						<img src="assets/images/preview-titans.png" style="max-width: 25%;">
+						<div class="projects-description">
+							<button class="projects-btn" onclick="window.open('https://github.com/JohnnyTranAC/TrialoftheTitans','_blank')">
+								<img src="assets/images/titans.svg" height="30" height="auto/">
+								&nbsp;| Trial Of The Titans
+							</button>
+							<span style="font-weight: bold;">
+								Gamified learning platform using SFDX for trainers to test and track their student's knowledge on new technologies
+							</span>
+						</div>
+					</div>
+				</div>
 			</div>
-		</p>
-		<p>
-			<div id="qr" style="display: inline-block; min-width:6cm; height:6cm; align: center; vertical-align: middle;">
-				<img src="assets/images/preview-mario.png" style="width: 6cm;">
+			<hr>
+			<div class="projects-General">
+				<div class="projects-title">Programming Projects</div>
+				<div class="projects-grid-container">
+					<div class="projects-grid-item">
+						<img src="assets/images/preview-tetris.png" style="max-width: 30%;">
+						<div class="projects-description">
+							<button class="projects-btn" onclick="window.open('https://github.com/JohnnyTranAC/Tetris-Android-App','_blank')">
+								<img src="assets/images/tetris.svg" height="30" height="auto/">
+								&nbsp;| Tetris - Android App
+							</button>
+							<span style="font-weight: bold;">
+								Java clone of the Tetris game for Android phone applications
+							</span>
+						</div>
+					</div>
+					<div class="projects-grid-item">
+						<img src="assets/images/preview-mario.png" style="max-width: 30%;">
+						<div class="projects-description">
+							<button class="projects-btn" onclick="window.open('https://github.com/JohnnyTranAC/Super-Mario-Bros-Android-App','_blank')">
+								<img src="assets/images/mario.svg" height="30" height="auto/">
+								&nbsp;| Super Mario Bros - Android App
+							</button>
+							<span style="font-weight: bold;">
+								Java clone of the classic 8-bit Super Mario Bros game for Android phone applications
+							</span>
+						</div>
+					</div>
+					<div class="projects-grid-item">
+						<img src="assets/images/preview-rover.png" style="max-width: 30%;">
+						<div class="projects-description">
+							<button class="projects-btn" onclick="window.open('https://github.com/ebotot/autonomous-rescue-rover','_blank')">
+								<img src="assets/images/rover.svg" height="30" height="auto/">
+								&nbsp;| Autonomous Rescue Trail (ART) Rover
+							</button>
+							<span style="font-weight: bold;">
+								UCI Senior Design Project 2020-2021 using Python on Raspberry Pi embedded systems
+							</span>
+						</div>
+					</div>
+					<div class="projects-grid-item">
+						<img src="assets/images/preview-RMS.png" style="max-width: 30%;">
+						<div class="projects-description">
+							<button class="projects-btn" onclick="window.open('https://github.com/JohnnyTranAC/Room-Monitoring-System','_blank')">
+								<img src="assets/images/room.svg" height="30" height="auto/">
+								&nbsp;| Room Monitoring System
+							</button>
+							<span style="font-weight: bold;">
+								Raspberry Pi system that monitors room conditions and user-activated switches
+							</span>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div style="display: inline-block; vertical-align: middle;">
-				<a href="https://github.com/JohnnyTranAC/Super-Mario-Bros-Android-App" class="gh" target="_blank">
-					<button class="btn project-btn">
-						<img src="assets/images/mario.svg" width="25" height=auto/> | Super Mario Bros - Android App
-					</button>
-				</a>
-				<br>
-				<p class="desc"><br> A Java clone of the classic 8-bit Super Mario Bros game for Android phone applications
-			</div>
-		</p>
-		<br>
-		<p>
-			<div id="qr" style="display: inline-block; min-width:6cm; height:4cm; align: center; vertical-align: middle;">
-				<img src="assets/images/preview-rover.png" style="width: 6cm;">
-			</div>
-			<div style="display: inline-block; vertical-align: middle;">
-				<a href="https://github.com/ebotot/autonomous-rescue-rover" class="gh" target="_blank">
-					<button class="btn project-btn">
-						<img src="assets/images/rover.svg" width="25" height=auto/> | Autonomous Rescue Trail (ART) Rover
-					</button>
-				</a>
-				<br>
-				<p class="desc"><br> UCI Senior Design Project 2020-2021 using Python on Raspberry Pi embedded systems
-			</div>
-		</p>
-		<br>
-		<p>
-			<div id="qr" style="display: inline-block; min-width:6cm; height:4cm; align: center; vertical-align: middle;">
-				<img src="assets/images/preview-RMS.png" style="width: 6cm;">
-			</div>
-			<div style="display: inline-block; vertical-align: middle;">
-				<a href="https://github.com/JohnnyTranAC/Room-Monitoring-System" class="gh" target="_blank">
-					<button class="btn project-btn">
-						<img src="assets/images/room.svg" class="filter-lblue" width="25" height=auto/> | Room Monitoring System
-					</button>
-				</a>
-				<br>
-				<p class="desc"><br> A Raspberry Pi system that monitors room conditions and user-activated switches
-			</div>
-		</p>
-	</div>
-</body>
+		</div>
+	</body>
+	<script>
+		window.addEventListener('scroll', function() {
+			const scrollTop = window.scrollY;
+			const docHeight = document.documentElement.scrollHeight;
+			const winHeight = window.innerHeight;
+			const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
+			
+			document.querySelector('.progress-bar').style.width = scrollPercent + '%';
+		});
+	</script>
 </html>
